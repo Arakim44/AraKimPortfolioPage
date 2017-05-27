@@ -23,6 +23,7 @@
     <!--<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>-->
 
     <!-- Theme CSS -->
+    
     <link href="css/agency.min.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -32,6 +33,11 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
     <![endif]-->
 
+    <!--hangman css-->
+    <!--<link rel="stylesheet" href="hangman/css/hangman.css">
+    <script src="hangman/js/jquery.js"></script>
+     <script src="http://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>-->
+ 
 </head>
 
 <body id="page-top" class="index">
@@ -177,7 +183,7 @@
                                 <i class="fa fa-gamepad fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/roundicons.png" class="img-responsive" alt="">
+                        <img src="img/hangman/hangmanPic1.jpg" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4><i class="fa fa-gamepad"></i> Hangman Game</h4>
@@ -338,6 +344,40 @@
     <!-- Portfolio Modals -->
     <!-- Use the modals below to showcase details about your portfolio projects! -->
 
+      <!-- profile-modals -->
+    <div class="portfolio-modal modal fade" id="profileModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!--   -->
+                                <h2>More about Me!</h2>
+                                <p class="item-intro text-muted">My Journey to become Web Developer!</p>
+                                
+                                <!--<img class="img-responsive img-centered" src="img/portfolio/dreams-preview.png" alt="">
+                                <p>Dreams is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Dreams is a modern one page web template designed for almost any purpose. It’s a beautiful template that’s designed with the Bootstrap framework in mind.</p>
+                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/dreams-free-one-page-web-template/">FreebiesXpress.com</a>.</p>-->
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close This!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
     <!-- Portfolio Modal 1 -->
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
@@ -351,19 +391,26 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Hangman Game</h2>
-                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/roundicons-free.png" alt="">
-                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                <p>
-                                    <strong>Want these icons in this portfolio item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.</p>
+                            <div class="modal-body">                             
+                                   <h2>Hangman Game</h2>
+                                <p class="item-intro text-muted">My very first JavaScript Game from scratch.</p>
+                                <img class="img-responsive img-centered" src="img/hangman/hangmanPic2.jpg" alt="">
+                                <p class="text-muted">Playing hangman on paper with your friends is very easy, but on JavaScript, it was not so simple. It was a lot of thought process of how to figure out what would computer do. It was a very different experience to me how to think like a computer, once I figure</p>
+                            
+                                <h4>Tool used:</h4>
                                 <ul class="list-inline">
-                                    <li>Date: July 2014</li>
-                                    <li>Client: Round Icons</li>
-                                    <li>Category: Graphic Design</li>
+                                    <li class="list-inline-item ">
+                                         <img src="img/logos/html5@2x.png" title="HTML5"  alt="html5" width="54" height="64" class="logo"> 
+                                    </li>
+                                    <li class="list-inline-item">
+                                         <img src="img/logos/css3@2x.png"title="CSS3" alt="css3"width="54" height="64" class="logo">
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <img src="img/logos/js@2x.png"title="JavaScript" alt="js" width="54" height="64" class="logo">
+                                    </li>
                                 </ul>
+                 
+                                <p>You can try game online <a href="http://hangman-game-ara-kim.herokuapp.com/index.html" target="_blank">here</a>.</p>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                             </div>
                         </div>
@@ -372,6 +419,7 @@
             </div>
         </div>
     </div>
+</div>
 
     <!-- Portfolio Modal 2 -->
     <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
@@ -532,6 +580,11 @@
 
     <!-- Theme JavaScript -->
     <script src="js/agency.min.js"></script>
+
+    <!--hangman JavaScript-->
+    <!--<script src="hangman/js/hangman.js"></script>-->
+
+
 
 </body>
 
