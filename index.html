@@ -197,6 +197,20 @@
                     <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
+                                 <i class="fa fa-gamepad fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/fnafSimpleGame/fnafCrop.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4><i class="fa fa-gamepad"></i> Simple Clicking Game (ft.fnaf)</h4>
+                        <p class="text-muted">Javascript "Game"</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
@@ -207,8 +221,12 @@
                         <p class="text-muted">Group Project #2</p>
                     </div>
                 </div>
+            </div>
+
+            <div class="row">
+                
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -221,12 +239,10 @@
                         <p class="text-muted">Website Design/Develop</p>
                     </div>
                 </div>
-            </div>
-            <div class="row">
 
 
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -240,7 +256,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -250,20 +266,6 @@
                     </a>
                     <div class="portfolio-caption">
                         <h4>Kye's Art Gallery</h4>
-                        <p class="text-muted">Website Design/Develop</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/random.jpg" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Tribute Page</h4>
                         <p class="text-muted">Website Design/Develop</p>
                     </div>
                 </div>
@@ -413,11 +415,17 @@
                                     <li class="list-inline-item">
                                         <img src="img/logos/js@2x.png" title="JavaScript" alt="js" width="54" height="64" class="logo">
                                     </li>
+                                     <li class="list-inline-item">
+                                        <img src="img/logos/jquery@2x.png" title="JavaScript" alt="js" width="54" height="64" class="logo">
+                                    </li>
                                 </ul>
-                                <p class="text-muted">Playing hangman on paper with your friends is very easy, but on JavaScript, it was not so simple for me.<br> It was a lot of thought process of how to think like computers. <br> I mainley used click event inorder to listen
-                                    for the letters that the players will click the buttons of alphabets. When it was clicked already, it was unable to click anymore, so you will know letters already guessed. <br> In the future, I will defenitly add images
-                                    that is correspoinding to the game as it progresses. <br> You can check out the whole source code in github <a href="https://github.com/Arakim44/Week-3-Game" target="_blank">here</a>.</p>
-                                <p>You can try game online <a href="http://hangman-game-ara-kim.herokuapp.com/index.html" target="_blank">here</a>.</p>
+                                   <button  type="button" class="btn btn-primary" onclick="window.open('http://hangman-game-ara-kim.herokuapp.com/index.html','_blank')"><i class="fa fa-gamepad"></i> Live Demo</button>
+                                <button  type="button" class="btn btn-primary" onclick="window.open('https://github.com/Arakim44/Week-3-Game','_blank')" ><i class="fa fa-github"></i> Sorce code</button>
+                                <br><br>
+                                <p class="text-muted">Playing hangman on paper with your friends is very easy, but on JavaScript, it was not so simple for me.<br> It was a lot of thought process of how to think like computers. <br> I mainley used click event in order to listen
+                                    for the letters that the players will click the buttons of alphabets.  Number of Guesses remainings are displayed and letter you already guessed will turn into red after clicking and won't be able to click again anymore.<br> In the future developing, I will defenitly add images
+                                    that is correspoinding to the game as it progresses. I am just super proud myself making this simple hangman game that's playable. Yay..<br><br><br>
+                                     
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                             </div>
                         </div>
@@ -428,8 +436,62 @@
     </div>
     </div>
 
-    <!-- Portfolio Modal 2 -->
+     <!-- Portfolio Modal 2 -->
     <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Simple Clicking Game (ft.fnaf)</h2>
+                                <p class="item-intro text-muted">Front-End Developing: Just Simple Click/response JavaScript game.</p>
+
+                                 <img class="img-responsive img-centered" src="img/fnafSimpleGame/fnaf.gif" alt="">
+                                  <h4>Tool used:</h4>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item ">
+                                        <img src="img/logos/html5@2x.png" title="HTML5" alt="html5" width="54" height="64" class="logo">
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <img src="img/logos/css3@2x.png" title="CSS3" alt="css3" width="54" height="64" class="logo">
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <img src="img/logos/js@2x.png" title="JavaScript" alt="js" width="54" height="64" class="logo">
+                                    </li>
+                                      <li class="list-inline-item">
+                                        <img src="img/logos/jquery@2x.png" title="JavaScript" alt="js" width="54" height="64" class="logo">
+                                    </li>
+                                </ul>
+                                <button  type="button" class="btn btn-primary" onclick="window.open('http://simple-game-ara-kim.herokuapp.com/','_blank')"><i class="fa fa-gamepad"></i> Live Demo</button>
+                                <button  type="button" class="btn btn-primary" onclick="window.open('https://github.com/Arakim44/Week-4-Game','_blank')" ><i class="fa fa-github"></i> Sorce code</button>
+                                <br><br>
+                                <p class="">This little simple game is the one of the small project from coding boot camp. This isn't really a game game.  It's more like a simple clicking game where we dynamically update the HTML pages with JQuery library.<br> <br>It's really simple! Each characters in the game has 3 attributes: Health points, attack points and counter attack points. Each time the player attacks, their characters attack power increases by its base attack points. For example, if the base attack point is 6, each attack will increase the attack power by 6(12,18,24, you do the math.)<br> When you attack the enemy characters, enmy only attack back with static counter attack power.<br><br>So go ahead, choose your character by clicking the character box, and choose your ememy by clicking the different character.  Then attack by clicking the attack button.(go figure)<br>Your player should be able to win and lose the game no matter what character you choose. The challenge should come from picking the right enemies, not choosing the strongest player!<br><br>
+                                <br>Do you not recognize the characters of this game? Oh you should definetly chack out this original indi game. It's creapy and massed up, I love it. check out the original game trailer.</p><br>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/0y55VEEfPL4" frameborder="0" allowfullscreen></iframe>
+                                <br><br>
+                                <p>You could get the original creepy game at steam <a href="http://store.steampowered.com/bundle/1729/FNaF_Franchise_Bundle/" target="_blank">here</a>. I am not advertising, I really like this game!! 
+                                
+                             
+                               
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
@@ -466,13 +528,17 @@
                                         <img src="img/logos/nodeJs@2x.png" title="Node.JS" alt="nodejs" width="128" height="84" class="logo">
                                     </li>
                                 </ul>
+                                 <button  type="button" class="btn btn-primary" onclick="window.open('https://github.com/Arakim44/arnold-login','_blank')" ><i class="fa fa-github"></i> Sorce code</button>
+                                <br><br>
+
+                                
 
                                 <p> Arnold:Workout App is a website Where you can Schedule workouts in weekely basis. We used passport.js library in order to authenticate users, and stored the user's data into MySQL database through using sequalize library.
                                     The Handlebars were utilized as template to render the page for different users.</p>
                                 <p>For the future development, I am hoping to add calendar to the webpage and be able to add workouts for future weeks ahead for each users, and keep in track of leader boards for the workout points that has accomplished.</p>
 
                                 <p>If you want to check out the other contributer Philip Montegna, check out his git hub <a href="https://github.com/pmontegna" target="_blank">here</a>.</p>
-                                <p>Unfortunalty This page is not available for live demo but you see the source code of the project in Github <a href="https://github.com/Arakim44/arnold-login" target="_blank">here</a>.</p>
+                                <p>Unfortunalty This page is not available for live demo so please check out the source code in github instead.</p>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                             </div>
                         </div>
@@ -482,8 +548,8 @@
         </div>
     </div>
 
-    <!-- Portfolio Modal 3 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Portfolio Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
@@ -514,37 +580,6 @@
         </div>
     </div>
 
-    <!-- Portfolio Modal 4 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <!-- Project Details Go Here -->
-                                <h2>Coming</h2>
-                                <img class="img-responsive img-centered" src="img/soon/soon2.jpg" alt="">
-                                <!--<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/golden-preview.png" alt="">
-                                <p>Start Bootstrap's Agency theme is based on Golden, a free PSD website template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Golden is a modern and clean one page web template that was made
-                                    exclusively for Best PSD Freebies. This template has a great portfolio, timeline, and meet your team sections that can be easily modified to fit your needs.</p>
-                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/golden-free-one-page-web-template/">FreebiesXpress.com</a>.</p>-->
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- Portfolio Modal 5 -->
     <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
@@ -562,13 +597,12 @@
                                 <!-- Project Details Go Here -->
                                 <h2>Coming</h2>
                                 <img class="img-responsive img-centered" src="img/soon/soon3.jpg" alt="">
+                                <p>I mean soon..</p>
                                 <!--<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/escape-preview.png" alt="">
-                                <p>Escape is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Escape is a one page web template that was designed with agencies in mind. This template is ideal for those looking
-                                    for a simple one page solution to describe your business and offer your services.</p>
-                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/escape-one-page-psd-web-template/">FreebiesXpress.com</a>.</p>-->
-                                <p class="item-intro text-muted">I mean soon..</p>
-
+                                <img class="img-responsive img-centered" src="img/portfolio/golden-preview.png" alt="">
+                                <p>Start Bootstrap's Agency theme is based on Golden, a free PSD website template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Golden is a modern and clean one page web template that was made
+                                    exclusively for Best PSD Freebies. This template has a great portfolio, timeline, and meet your team sections that can be easily modified to fit your needs.</p>
+                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/golden-free-one-page-web-template/">FreebiesXpress.com</a>.</p>-->
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                             </div>
                         </div>
@@ -594,12 +628,15 @@
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
                                 <h2>Coming</h2>
+                                
                                 <img class="img-responsive img-centered" src="img/soon/soon.gif" alt="">
                                 <!--<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/dreams-preview.png" alt="">
-                                <p>Dreams is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Dreams is a modern one page web template designed for almost any purpose. It’s a beautiful template that’s designed
-                                    with the Bootstrap framework in mind.</p>
-                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/dreams-free-one-page-web-template/">FreebiesXpress.com</a>.</p>-->
+                                <img class="img-responsive img-centered" src="img/portfolio/escape-preview.png" alt="">
+                                <p>Escape is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Escape is a one page web template that was designed with agencies in mind. This template is ideal for those looking
+                                    for a simple one page solution to describe your business and offer your services.</p>
+                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/escape-one-page-psd-web-template/">FreebiesXpress.com</a>.</p>-->
+                                <p class="item-intro text-muted">I mean soon..</p>
+
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
                             </div>
                         </div>
@@ -608,6 +645,8 @@
             </div>
         </div>
     </div>
+
+   
 
     <!-- jQuery -->
   
