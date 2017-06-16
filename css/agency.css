@@ -1,14 +1,4 @@
-/*preloader*/
-#loader-wrapper {
-    position: fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    z-index: 1000;  
-    background-color: #222;
-
-}
+/*preloader============================================================*/
 
 #loader {
     display: block;
@@ -79,7 +69,16 @@
             transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera*/ 
         }
 }
+#loader-wrapper {
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index: 1000;  
+    /*background-color: #222;*/
 
+}
 
 #loader-wrapper .loader-section {
     position: fixed;
@@ -91,15 +90,57 @@
 
 }
 
-#loader-warpper .loader-section.section-left{
+#loader-wrapper .loader-section.section-left{
     left:0;
 }
 
-#loader-warpper .loader-section.section-right{
+#loader-wrapper .loader-section.section-right{
     right:0;    
 }
+/*loaded styles*/
+.loaded #loader-warpper .loader-section .section-left{
+    -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */ 
+            -ms-transform:  translateX(-100%);  /* IE 9 */
+            transform:  translateX(-100%);  /* Firefox 16+, IE 10+, Opera*/
 
-/*preloader*/
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+          transition: all 0.7s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);         
+}
+
+.loaded #loader-warpper .loader-section .section-left{
+    -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */ 
+            -ms-transform:  translateX(100%);  /* IE 9 */
+            transform:  translateX(100%);  /* Firefox 16+, IE 10+, Opera*/ 
+
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+          transition: all 0.7s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);        
+
+}
+
+.loaded #loader-wrapper {
+    visibility: hidden;
+
+    -webkit-transform: translateY(-100%);  
+            -ms-transform:  translateY(-100%);   
+            transform:  translateY(-100%);  
+      -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+          transition: all 0.7s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);         
+
+    /*-webkit-transition: all 0.3s 1s ease-out;  
+          transition: all 0.3s 1s ease-out;         */
+}
+.loaded #loader {
+    opacity:0;
+
+    -webkit-transition: all 0.3s ease-out;  /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+          transition: all 0.3s ease-out;
+
+}
+
+
+/*preloader================================*/
+
+
 
 
 
@@ -901,9 +942,13 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
     margin-top: 0
 }
 
-/*.portfolio-modal .modal-content img {
-    margin-bottom: 30px
-}*/
+.portfolio-modal .modal-content .modal-img {
+    margin-bottom: 30px;
+    display: block;
+    margin: auto;
+    /*width: 40%;*/
+    
+}
 
 .portfolio-modal .close-modal {
     position: absolute;

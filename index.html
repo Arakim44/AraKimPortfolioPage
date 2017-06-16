@@ -11,13 +11,18 @@
 
     <title>Ara Kim | Web Developer</title>
 
-    <!-- Bootstrap Core CSS -->
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+        <!-- jQuery -->
+  
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+    <!-- Bootstrap Core CSS -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 
 
@@ -42,7 +47,27 @@
 
 </head>
 
+<script>$(document).ready(function() {
+ 
+    setTimeout(function(){
+        $('body').addClass('loaded');
+        // $('').css('color','#222222');
+    }, 3000);
+ 
+});</script>
+
 <body id="page-top" class="index">
+    
+    <div id="loader-wrapper">
+
+        <div id="loader"></div>
+
+        <div class="loader-section  section-left"></div>
+        <div class="loader-section  section-right"></div>
+        
+    </div>
+
+   
 
     <!-- Navigation -->
     <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
@@ -421,7 +446,7 @@
                             <div class="modal-body">
                                 <h2>Hangman Game</h2>
                                 <p class="item-intro text-muted">Front-End Developing: My very first JavaScript Game from scratch.</p>
-                                <img class="img-responsive img-centered" src="img/hangman/hangman.gif" alt="">
+                                <img class="modal-img img-responsive img-centered" src="img/hangman/hangman.gif" alt="">
                                 <ul class="list-inline">
                                 <h4>Tool used:</h4>
                                      <li class="list-inline-item liContainer">
@@ -452,6 +477,7 @@
                                    <button  type="button" class="btn btn-primary" onclick="window.open('http://hangman-game-ara-kim.herokuapp.com/index.html','_blank')"><i class="fa fa-gamepad"></i> Live Demo</button>
                                 <button  type="button" class="btn btn-primary" onclick="window.open('https://github.com/Arakim44/Week-3-Game','_blank')" ><i class="fa fa-github"></i> Sorce code</button>
                                 <br><br>
+                                <p><font color="red"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Warning: Not responsive YET.  It won't look pretty on your phone.</font></p>
                                 <p class="text-muted">Playing hangman on paper with your friends is very easy, but on JavaScript, it was not so simple for me.<br> It was a lot of thought process of how to think like computers. <br> I mainley used click event in order to listen
                                     for the letters that the players will click the buttons of alphabets.  Number of Guesses remainings are displayed and letter you already guessed will turn into red after clicking and won't be able to click again anymore.<br> In the future developing, I will defenitly add images
                                     that is correspoinding to the game as it progresses. I am just super proud myself making this simple hangman game that's playable. Yay..<br><br><br>
@@ -484,7 +510,7 @@
                                 <h2>Simple Clicking Game (ft.fnaf)</h2>
                                 <p class="item-intro text-muted">Front-End Developing: Just Simple Click/response JavaScript game.</p>
 
-                                 <img class="img-responsive img-centered" src="img/fnafSimpleGame/fnaf.gif" alt="">
+                                 <img class="modal-img  img-responsive img-centered" src="img/fnafSimpleGame/fnaf.gif" alt="">
                                   <h4>Tool used:</h4>
                                 <ul class="list-inline">
                                      <li class="list-inline-item liContainer">
@@ -515,6 +541,7 @@
                                 <button  type="button" class="btn btn-primary" onclick="window.open('http://simple-game-ara-kim.herokuapp.com/','_blank')"><i class="fa fa-gamepad"></i> Live Demo</button>
                                 <button  type="button" class="btn btn-primary" onclick="window.open('https://github.com/Arakim44/Week-4-Game','_blank')" ><i class="fa fa-github"></i> Sorce code</button>
                                 <br><br>
+                                <p><font color="red"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Warning: Not responsive YET. It won't look pretty on your phone.</font></p><br>
                                 <p class="">This little simple game is the one of the small project from coding boot camp. This isn't really a game game.  It's more like a simple clicking game where we dynamically update the HTML pages with JQuery library.<br> <br>It's really simple! Each characters in the game has 3 attributes: Health points, attack points and counter attack points. Each time the player attacks, their characters attack power increases by its base attack points. For example, if the base attack point is 6, each attack will increase the attack power by 6(12,18,24, you do the math.)<br> When you attack the enemy characters, enmy only attack back with static counter attack power.<br><br>So go ahead, choose your character by clicking the character box, and choose your ememy by clicking the different character.  Then attack by clicking the attack button.(go figure)<br>Your player should be able to win and lose the game no matter what character you choose. The challenge should come from picking the right enemies, not choosing the strongest player!<br><br>
                                 <br>Do you not recognize the characters of this game? Oh you should definetly chack out this original indi game. It's creapy and massed up, I love it. check out the original game trailer.</p><br>
                                 <iframe width="560" height="315" src="https://www.youtube.com/embed/0y55VEEfPL4" frameborder="0" allowfullscreen></iframe>
@@ -548,7 +575,7 @@
                             <div class="modal-body">
                                 <h2>Arnold : Workout App</h2>
                                 <p class="item-intro text-muted">Full Stack Develop: Group Project application creatd in team of 2 developers.</p>
-                                <img class="img-responsive img-centered" src="img/arnold/arnoldPreview.png" alt="">
+                                <img class="modal-img  img-responsive img-centered" src="img/arnold/arnoldPreview.png" alt="">
                                 <h4>Tool used:</h4>
                                 <ul class="list-inline">
                                      <li class="list-inline-item liContainer">
@@ -624,7 +651,7 @@
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
                                 <h2>Coming</h2>
-                                <img class="img-responsive img-centered" src="img/soon/soon1.jpg" alt="">
+                                <img class="modal-img  img-responsive img-centered" src="img/soon/soon1.jpg" alt=""><br><br>
 
                                 <!--<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                                 <img class="img-responsive img-centered" src="img/portfolio/treehouse-preview.png" alt="">
@@ -656,7 +683,7 @@
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
                                 <h2>Coming</h2>
-                                <img class="img-responsive img-centered" src="img/soon/soon3.jpg" alt="">
+                                <img class="modal-img  img-responsive img-centered" src="img/soon/soon3.jpg" alt=""><br><br>
                                 <p>I mean soon..</p>
                                 <!--<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                                 <img class="img-responsive img-centered" src="img/portfolio/golden-preview.png" alt="">
@@ -689,7 +716,7 @@
                                 <!-- Project Details Go Here -->
                                 <h2>Coming</h2>
                                 
-                                <img class="img-responsive img-centered" src="img/soon/soon.gif" alt="">
+                                <img class="modal-img  img-responsive img-centered" src="img/soon/soon.gif" alt=""><br><br>
                                 <!--<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                                 <img class="img-responsive img-centered" src="img/portfolio/escape-preview.png" alt="">
                                 <p>Escape is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Escape is a one page web template that was designed with agencies in mind. This template is ideal for those looking
@@ -706,26 +733,10 @@
         </div>
     </div>
 
-    <div id="loader-wrapper">
-        <div id="loader"></div>
 
-        <div class="loader-section section-left"></div>
-        <div class="loader-section section-right"></div>
-        
-    </div>
-
-   
-
-    <!-- jQuery -->
-  
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
-
+   
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>
