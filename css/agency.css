@@ -139,6 +139,10 @@
 
 
 /*preloader================================*/
+#nav-visible{
+    visibility: hidden;
+}
+/**/
 
 
 
