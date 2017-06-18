@@ -16,6 +16,13 @@
   
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
+    
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script> 
+    
+
+
+    
+
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
@@ -47,17 +54,20 @@
 
 </head>
 
-<script>$(document).ready(function() {
+<!--<script>$(document).ready(function() {
  
     setTimeout(function(){
         $('body').addClass('loaded');
         $('#nav-visible').css('visibility','visible');
+        $('#wait').css('visibility','hidden');
     }, 3000);
  
-});</script>
+});</script>-->
 
 <body id="page-top" class="index">
-    
+
+ <div class="loader-content">
+     <!--<h1 id="wait">You are entering Ara's page in one moment..</h1>-->
     <div id="loader-wrapper">
 
         <div id="loader"></div>
@@ -66,6 +76,7 @@
         <div class="loader-section  section-right"></div>
         
     </div>
+ </div>   
 
    
 
@@ -743,6 +754,8 @@
 
     <!-- Theme JavaScript -->
     <script src="js/agency.min.js"></script>
+
+    <script src="js/load.js"></script>
 
     <!--hangman JavaScript-->
     <!--<script src="hangman/js/hangman.js"></script>-->
