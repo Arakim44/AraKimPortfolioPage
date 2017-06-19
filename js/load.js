@@ -5,6 +5,6 @@ $(document).ready(function() {
         $('body').addClass('loaded');
         $('#nav-visible').css('visibility','visible');
         $('#wait').css('visibility','hidden');
-    }, 3000);
+    }, 2200);
  
 });
