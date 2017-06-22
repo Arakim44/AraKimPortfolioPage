@@ -144,6 +144,16 @@
 
 
 /*preloader================================*/
+
+
+/*hover for mail===========================*/
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.2); }
+
+/*hover for mail===========================*/
+
+
 #nav-visible{
     visibility: hidden;
 }

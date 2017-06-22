@@ -45,6 +45,7 @@
     <!-- Theme CSS -->
 
     <link href="css/agency.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/hover.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -291,7 +292,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/CricketCoffee/CricketsLogoCrop.png" class="img-responsive" alt="">
+                        <img src="img/CricketCoffee/pageCrop.jpg" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
                         <h4> Cricket's Coffee Company</h4>
@@ -343,8 +344,9 @@
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Contact me!</h2>
                     <h3 style="color:white">ahrakim44@gmail.com<address>
-                        <a data-auto-recognition="true" data-content="ahrakim44@gmail.com" href="mailto: ahrakim44@gmail.com" data-type="mail" style="color:white"><i class="fa fa-envelope fa-4x" aria-hidden="true"></i></a>
+                        <a data-auto-recognition="true" data-content="ahrakim44@gmail.com" href="mailto: ahrakim44@gmail.com" data-type="mail" style="color:white"><i class="hvr-pulse fa fa-envelope fa-3x" aria-hidden="true"></i></a>
                         </address></h3>
+                        
                     <!--<h3 class="section-subheading text-muted" style="color:red"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Email system is momently borken. So if you send me something, I won't be able to see it!</h3>-->
                 </div>
             </div>
@@ -669,15 +671,52 @@
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2>Coming</h2>
-                                <img class="modal-img  img-responsive img-centered" src="img/soon/soon1.jpg" alt=""><br><br>
-
-                                <!--<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                <img class="img-responsive img-centered" src="img/portfolio/treehouse-preview.png" alt="">
-                                <p>Treehouse is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. This is bright and spacious design perfect for people or startup companies looking to showcase their apps or
-                                    other projects.</p>
-                                <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/treehouse-free-psd-web-template/">FreebiesXpress.com</a>.</p>-->
+                                 <h2>Cricket's Coffee Company</h2>
+                                  <p class="item-intro text-muted">Front-end Develop: Website page of a small coffee shop of my small college town</p>
+                                 <img class="modal-img  img-responsive img-centered" src="img/CricketCoffee/page.png" alt="">
+                                 <h4>Tool used:</h4>
+                                <ul class="list-inline">
+                                     <li class="list-inline-item liContainer">
+                                         <img src="img/logos/html5@2x.png"   alt="html5" width="74" height="84" class="logo">
+                                         <div class="middle">
+                                             <div class="logotext">HTML5</div>
+                                          </div>
+                                    </li>
+                                      <li class="list-inline-item liContainer">
+                                         <img src="img/logos/css3@2x.png"title="CSS3" alt="css3" width="74" height="84" class="logo">
+                                         <div class="middle">
+                                             <div class="logotext">CSS3</div>
+                                          </div>
+                                    </li>
+                                    <li class="list-inline-item liContainer">
+                                        <img src="img/logos/js@2x.png"title="JavaScript" alt="js" width="74" height="84" class="logo">
+                                         <div class="middle">
+                                             <div class="logotext">JavaScript</div>
+                                          </div>
+                                    </li>
+                                      <li class="list-inline-item liContainer">
+                                        <img src="img/logos/jquery@2x.png" title="jQuery" alt="Jquery" width="74" height="84" class="logo">
+                                         <div class="middle">
+                                             <div class="logotext">jQuery</div>
+                                          </div>
+                                    </li>
+                                    <li class="list-inline-item liContainer">
+                                         <img src="img/logos/nodeJs@2x.png" title="NodeJS"alt="nodejs" width="128" height="84" class="logo">
+                                          <div class="middle">
+                                             <div class="logotext">NodeJS</div>
+                                          </div>
+                                    </li>
+                                </ul>
+                                <button  type="button" class="btn btn-primary" onclick="window.open('https://cricketscoffee.herokuapp.com/','_blank')"><i class=""></i>Live Demo</button>
+                                <button  type="button" class="btn btn-primary" onclick="window.open('https://github.com/Arakim44/cricketsCoffee','_blank')" ><i class="fa fa-github"></i> Sorce code</button>
+                                <br><br>
+                                <p>This website is just a front-end coffee shop webpage that I used to go to when I was in college.  I used handlebar.js for the small tempalate part, and used node.js and express to route to each different pages.  I used the bootstrap theme to start the webpage, but modified it by looking at other coffee shop webpage through "inspect me" in chrome browser. Nothing special about this webpage, I just wanted to make some "local" restaurant website.  I do not own any pictures on this webpage actually. I grabbed pictures from page of the cricket's coffee. Hopefully I will contact them and let them know I made a such beautiful website for them, and sell it or something.</p>
+                                <p>For the future development, I want to have Json file with datas of menus and images and want to call it through ajax call. This webpage is static from top bottom. Also, I will have the contact/sign up for newsletter working with backend. It is not working because I do not know how to do it through herokuapp.  Another one is maybe I could add page with openmic sign up function. I think that would be cool too.</p>                                
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+
+                               
+
+                                 
                             </div>
                         </div>
                     </div>
@@ -701,9 +740,10 @@
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2>Coming</h2>
-                                <img class="modal-img  img-responsive img-centered" src="img/soon/soon3.jpg" alt=""><br><br>
-                                <p>I mean soon..</p>
+                                 <h2>Coming</h2>
+                                <img class="modal-img  img-responsive img-centered" src="img/soon/soon1.jpg" alt=""><br><br>
+                               
+
                                 <!--<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                                 <img class="img-responsive img-centered" src="img/portfolio/golden-preview.png" alt="">
                                 <p>Start Bootstrap's Agency theme is based on Golden, a free PSD website template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Golden is a modern and clean one page web template that was made
